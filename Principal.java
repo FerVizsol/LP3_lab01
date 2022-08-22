@@ -15,8 +15,11 @@ public class Principal {
 				fl = true;
 		}while(vida<3 && !fl);
 		sc.close();
-		if(fl==true)
+		if(fl==true) {
 			System.out.println("Adivinaste!!!!! ");
+			Regalo gift = new Regalo();
+			System.out.println("Obtuviste un regalo\nGanaste " + gift.elegir(vida));
+		}
 		else
 			System.out.println("ups, perdiste...");
 	
