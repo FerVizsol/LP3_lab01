@@ -17,8 +17,7 @@ public class Principal {
 		sc.close();
 		if(fl==true) {
 			System.out.println("Adivinaste!!!!! ");
-			Regalo gift = new Regalo();
-			System.out.println("Obtuviste un regalo\nGanaste " + gift.elegir(vida));
+			System.out.println("Obtuviste un regalo\nGanaste " + Regalo.elegir(vida));
 		}
 		else
 			System.out.println("ups, perdiste...");
